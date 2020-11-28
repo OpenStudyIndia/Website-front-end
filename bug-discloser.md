@@ -10,29 +10,31 @@
 
 ### To comply with the Program, security researchers disclosing potential vulnerabilities must do so in accordance with the following:
 
-You must not compromise public safety;
-You must not use information owned by a third party in your Report;
-You must not make use of or exploit any vulnerability that you find or has been found by someone else, including but not limited to *personal or monetary gain* etc;
-You must not download, export or store openIndiaStudy’s data under any circumstances unless the data is opensource for eg. the source code;
-You must not disrupt others’ use of openIndiaStudy products or services;
-You must not use accounts that are not your own;
-You must not violate any applicable local, state, national, or international law;
-You must not cause any data privacy violations;
-You must not cause any intellectual property violations; and
+###### You must not compromise public safety;
+###### You must not use information owned by a third party in your Report;
+###### You must not make use of or exploit any vulnerability that you find or has been found by someone else, including but not limited to *personal or monetary gain* etc;
+###### You must not download, export or store openIndiaStudy’s data under any circumstances unless the data is opensource for eg. the source code;
+###### You must not disrupt others’ use of openIndiaStudy products or services;
+###### You must not use accounts that are not your own;
+###### You must not violate any applicable local, state, national, or international law;
+###### You must not cause any data privacy violations;
+###### You must not cause any intellectual property violations; and
 
 ### Specifically,, the following activities are prohibited:
 
-Denial of Service (DoS) attacks against openIndiaStudy, its products, or any of its third-party providers;
-Social engineering or phishing to solicit login passwords or credentials from openIndiaStudy employees, contractors, or third-parties;
-Physical attacks against openIndiaStudy employees, offices, or data centers;
-Knowing distribution of any malware; and
-Using unsolicited bulk messaging (spam) to pursue any vulnerabilities.
-Report Submission and Review
+###### Denial of Service (DoS) attacks against openIndiaStudy, its products, or any of its third-party providers;
+###### Social engineering or phishing to solicit login passwords or credentials from openIndiaStudy employees, contractors, or third-parties;
+###### Physical attacks against openIndiaStudy employees, offices, or data centers;
+###### Knowing distribution of any malware; and
+###### Using unsolicited bulk messaging (spam) to pursue any vulnerabilities.
+###### Report Submission and Review
 
 ## To participate you must submit a potential vulnerability report to openIndiaStudy (the “Report”) via email at contact@aayushgarg.net
 
 Upon successful submission of your Report you will receive a confirmation of receipt from us.
+
 After we receive your Report, we will review. Please allow us a reasonable period of time to investigate your Report and confirm the situation. We will keep you reasonably informed about the status of any vulnerability you reported through the Program that we have validated.
+
 openIndiaStudy is not responsible for any Reports that it does not receive. 
 
 ## What to Include in Your Report
@@ -50,13 +52,18 @@ We are committed to responding to all Reports in a timely manner. In return for 
 To participate in this Program you must:
 
 Have read and agree to this Program;
+
 Be at least 13 years of age;
+
 Participate in the Program in your individual capacity or with the permission of the organization that employs you.
 
 ## To participate in this Program, you must not be:
 On a sanctions list or in a country on a sanctions list (e.g. Cuba, Iran, North Korea, Sudan, or Syria);
+
 Prohibited or limited from participating in the Program by any applicable law;
+
 Currently Employed by openIndiaStudy;
+
 If you violate any provision of these representations, you will be automatically disqualified from this Program.
 
 # Legal
