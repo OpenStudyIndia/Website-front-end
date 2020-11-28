@@ -3,10 +3,14 @@
 import React, { useState } from 'react';
 import './quizload.css';
 import { Button } from '../Button/Button';
+
 //import questions.json file and load it in the variable questions,
 //please note this will be done by question.js which will load and parse the json from an api 
 //code may be available in question.js.
 import questjson from './questions.json';
+
+import {ShowmyScore} from './ShowScore'; //imports show score, used to display score working on it.
+
 var questions = questjson
 
 //this is the normal function exported.
@@ -80,7 +84,7 @@ function QuizLoad() {
     //just starts a timeout so that the rerender with colour goes away automatically after n seconds.
     setTimeout(() => {
       afterrerender()
-    }, 5000);
+    }, 500);
     //returns the colour rendered buttons. run for more info.
     return (
       <div className='app'>
@@ -100,7 +104,7 @@ function QuizLoad() {
             <div className='answer-section'>
               {
                 (
-                  <button disabled='true' style={{ backgroundColor: '#2f922f' }} >{questions[currentQuestion].answerOptions[selectopt].answerText}</button>
+                  <Button disable={true} bgcolor='#2f922f' buttonStyle='btn--square'>{questions[currentQuestion].answerOptions[selectopt].answerText}</Button>
                 )}
             </div>
           ) : (
@@ -129,12 +133,10 @@ function QuizLoad() {
   else {
     return (
       <div className='app'>
-        {//wow this shitty score screen is bad, will be updating it, it does work but i i i i i i *system crashed*
+        {//wow this shitty score screen is bad, will be updating it, it does work but i changed it. latest version-0.0.0.2-alpha
         }
         {showScore ? (
-          <div className='score-section'>
-            You scored {score} out of {questions.length}
-          </div>
+          <ShowmyScore score={score} totalScore={questions.length}/>
         ) : (
             <>
               {//just shows you the current question with all the options and you can just select one, pretty standard.... 
@@ -149,12 +151,9 @@ function QuizLoad() {
               <div className='answer-section'>
                 {//using button libary created by me, see button.js
                 }
-                      {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                        <Button buttonStyle='btn--square' buttonSize='btn--medium' onClick={() => handleAnswerOptionClick(answerOption.isCorrect, index)}>{answerOption.answerText}</Button>
-                      ))}
-                    {/* </ul>
-                  </div>
-                </div> */}
+                {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                  <Button buttonStyle='btn--square' buttonSize='btn--medium' onClick={() => handleAnswerOptionClick(answerOption.isCorrect, index)}>{answerOption.answerText}</Button>
+                ))}
               </div>
             </>
           )}

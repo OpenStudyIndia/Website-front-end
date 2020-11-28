@@ -21,11 +21,10 @@ export const Button = ({
     path,//for using link or hashlink redirect to a part of site.
     offset,//if you would like to redirect using hash router, then you need offset to make sure whatever is at the top is ignored.
     bgcolor,//get an hex value, set it.
-    disable //boolean to disable the button
+    disable //boolean to disable the button only pass boolen in this if you want app to work. 
 }) => {
     //checks button style
-    const checkButtonStyle = STYLES.includes(buttonStyle)
-        ? buttonStyle
+    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle
         : STYLES[0];
 
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
@@ -40,9 +39,8 @@ export const Button = ({
                 onClick={onClick}//just returns itself for click
                 disabled={disable}//if you want the button to be disabled, pass {true}
                 type={type}//type of button, pretty useless, just needed once. is here if needed.
-            >
-                {children}{//just get the regular children that is the text that you pass <Button>in here</Button>.
-                            }
+            >{children} {//just get the regular children that is the text that you pass <Button>in here</Button>.
+                        }
             </button>
         </HashLink>
     );
