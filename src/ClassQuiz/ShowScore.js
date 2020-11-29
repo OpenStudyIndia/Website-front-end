@@ -11,6 +11,7 @@ export const ShowmyScore = ({
     return (
             <div className={`score ${checkStlye}`}>
                 <h1>you scored {score} out of {totalScore}</h1>
+                {/* just prints how much you scored */}
             </div>
     );
 };
